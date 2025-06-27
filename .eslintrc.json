@@ -1,0 +1,15 @@
+{
+    "parser": "jsonc-eslint-parser",
+    "plugins": ["jsonc"],
+    "overrides": [
+      {
+        "files": ["*.jsonc"],
+        "rules": {
+          "jsonc/quote-props": ["error", "always"],        // 键必须加双引号
+          "quotes": ["error", "double"],                   // 值必须是双引号
+          "comma-dangle": ["error", "only-multiline"]      // trailing comma 可接受
+        }
+      }
+    ]
+  }
+  
